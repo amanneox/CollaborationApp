@@ -1,0 +1,18 @@
+{
+  "properties": [
+    {
+      "name": "cloud.aws.bucket.baseurl",
+      "type": "java.lang.String",
+      "description": "Description for cloud.aws.bucket.baseurl."
+    },
+    {
+      "name": "cloud.aws.bucket",
+      "type": "java.lang.String",
+      "description": "Description for cloud.aws.bucket."
+    },
+    {
+      "name": "cloud.aws.bucket",
+      "type": "java.lang.String",
+      "description": "Description for cloud.aws.bucket."
+    }
+  ] }
