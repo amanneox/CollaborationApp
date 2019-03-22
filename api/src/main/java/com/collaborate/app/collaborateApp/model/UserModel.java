@@ -35,7 +35,16 @@ public class UserModel extends AuditModel {
     @Column(unique=true)
     private  String number;
 
+    @NotBlank
+    private  String role;
 
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
+    }
 
     public String getNumber() {
         return number;
