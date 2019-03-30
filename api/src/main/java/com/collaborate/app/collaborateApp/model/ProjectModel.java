@@ -21,6 +21,21 @@ public class ProjectModel extends AuditModel {
 
     @ElementCollection
     @JsonProperty("users")
-    private List<UserModel> users;
+    private List<Integer> users;
 
+    public String getName() {
+        return name;
+    }
+
+    public List<Integer> getUsers() {
+        return users;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setUsers(List<Integer> users) {
+        this.users = users;
+    }
 }

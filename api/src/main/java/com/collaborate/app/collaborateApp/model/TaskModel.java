@@ -23,9 +23,16 @@ public class TaskModel extends AuditModel {
     private String name;
 
     @NotBlank
+    private String status;
+
+
+    @NotBlank
     @Size(min = 3)
     private String description;
 
+    @ElementCollection
+    @JsonProperty("users")
+    private List<Integer> users;
 
 
     @ManyToOne(fetch = FetchType.LAZY,optional = false)
@@ -56,5 +63,13 @@ public class TaskModel extends AuditModel {
 
     public void setProject(ProjectModel project) {
         this.project = project;
+    }
+
+    public List<Integer> getUsers() {
+        return users;
+    }
+
+    public void setUsers(List<Integer> users) {
+        this.users = users;
     }
 }
